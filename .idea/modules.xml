@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CPJava.iml" filepath="$PROJECT_DIR$/CPJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaCheckpoint05.iml" filepath="$PROJECT_DIR$/.idea/JavaCheckpoint05.iml" />
     </modules>
   </component>
 </project>

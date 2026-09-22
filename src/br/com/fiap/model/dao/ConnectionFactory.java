@@ -1,17 +1,17 @@
-package br.com.fiap.factory;
+package br.com.fiap.model.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionFactory {
-    public static Connection abrirConexão(){
+    public static Connection abrirConexao(){
         Connection con = null;
         try {
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
                 String url = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-                final String USER = "rm (JDBC é chato pra krl pqp)";
+                final String USER = "user";
                 final String PASS = "senha";
                 con = DriverManager.getConnection(url, USER, PASS);
                 System.out.println("Conexão aberta.");
@@ -29,7 +29,7 @@ public class ConnectionFactory {
             throw new RuntimeException(e);
         }
     }
-    public static Connection fecharConexão(Connection con){
+    public static Connection fecharConexao(Connection con){
         try {
             con.close();
             System.out.println("Conexão fechada.");
